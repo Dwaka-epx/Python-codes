@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import glob as glob
 
-typeOfTest=['peering','shearing']
+typeOfTest=['peeling','shearing']
 csv_files = sorted(glob.glob(typeOfTest[1]+'Table_*.csv'))
 
 fig, ax = plt.subplots()
@@ -35,9 +35,9 @@ for itemp,file in enumerate(csv_files):
 				, label=temp_accel)
 
 ax.set_xlabel('acceleration time [hour]')
-ax.set_ylabel('Normalized peering strength')
+ax.set_ylabel('Normalized peeling strength')
 #plt.yscale('log')
 plt.legend(loc='upper right')
-ax.set_title('90° peering test')
+ax.set_title('90° peeling test')
 plt.ylim([0,3.5])
 plt.show()

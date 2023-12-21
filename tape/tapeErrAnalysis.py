@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import glob as glob
 
-typeOfTest=['peering','shearing']
+typeOfTest=['peeling','shearing']
 csv_files = sorted(glob.glob(typeOfTest[1]+'Table_*.csv'))
 
 numerator=[0]
